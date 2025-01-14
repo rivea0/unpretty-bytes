@@ -1,10 +1,10 @@
 import { createSizeUnit, createCombineUnit } from './utils.js';
 
 // base-10
-export const BYTE_UNITS = ['B', 'kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
+export const BYTE_UNITS: ReadonlyArray<string> = ['B', 'kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
 
 // base-2
-export const BIBYTE_UNITS = [
+export const BIBYTE_UNITS: ReadonlyArray<string> = [
   'B',
   'KiB',
   'MiB',
@@ -16,7 +16,7 @@ export const BIBYTE_UNITS = [
   'YiB',
 ];
 
-export const EXPANDED_BYTE_UNITS = [
+export const EXPANDED_BYTE_UNITS: ReadonlyArray<string> = [
   'kilobyte',
   'megabyte',
   'gigabyte',
@@ -27,7 +27,7 @@ export const EXPANDED_BYTE_UNITS = [
   'yottabyte',
 ];
 
-export const EXPANDED_BIBYTE_UNITS = [
+export const EXPANDED_BIBYTE_UNITS: ReadonlyArray<string> = [
   'kibibyte',
   'mebibyte',
   'gibibyte',
