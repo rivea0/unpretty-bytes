@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "ci": "npm run build && npm run check-format",
-    "test": "node --test",
+    "ci": "npm run build && npm run check-format && npm run test",
+    "test": "tsx --test src/**/*.test.ts",
     "format": "prettier --write .",
     "check-format": "prettier --check ."
   },
@@ -23,6 +23,7 @@
   "devDependencies": {
     "@types/node": "^22.10.6",
     "prettier": "^3.4.2",
+    "tsx": "^4.19.2",
     "typescript": "^5.7.3"
   }
 }
