@@ -1,0 +1,27 @@
+{
+  "name": "unpretty-bytes",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "ci": "npm run build && npm run check-format",
+    "test": "node --test",
+    "format": "prettier --write .",
+    "check-format": "prettier --check ."
+  },
+  "keywords": [],
+  "homepage": "https://github.com/rivea0/unpretty-bytes",
+  "author": "Eda",
+  "license": "MIT",
+  "description": "Convert a human-readable string to bytes: 1 GiB → 1073741824",
+  "repository": "rivea0/unpretty-bytes",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.3"
+  }
+}
