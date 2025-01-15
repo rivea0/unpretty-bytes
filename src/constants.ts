@@ -1,7 +1,17 @@
 import { createSizeUnit, createCombineUnit } from './utils.js';
 
 // base-10
-export const BYTE_UNITS: ReadonlyArray<string> = ['B', 'kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
+export const BYTE_UNITS: ReadonlyArray<string> = [
+  'B',
+  'kB',
+  'MB',
+  'GB',
+  'TB',
+  'PB',
+  'EB',
+  'ZB',
+  'YB',
+];
 
 // base-2
 export const BIBYTE_UNITS: ReadonlyArray<string> = [

@@ -41,17 +41,24 @@ interface ISizeUnit {
   divider: number;
   symbol: string;
   name: string;
-};
+}
 
 interface ICombinedUnit {
   decimalUnit: ISizeUnit;
   binaryUnit: ISizeUnit;
 }
 
-export function createSizeUnit(divider: number, symbol: string, name: string): ISizeUnit {
-  return { divider, symbol, name }
+export function createSizeUnit(
+  divider: number,
+  symbol: string,
+  name: string,
+): ISizeUnit {
+  return { divider, symbol, name };
 }
 
-export function createCombineUnit(decimalUnit: ISizeUnit, binaryUnit: ISizeUnit): ICombinedUnit {
+export function createCombineUnit(
+  decimalUnit: ISizeUnit,
+  binaryUnit: ISizeUnit,
+): ICombinedUnit {
   return { decimalUnit, binaryUnit };
 }
