@@ -7,6 +7,38 @@ Partly based on [python-humanfriendly](https://github.com/xolox/python-humanfrie
 
 _It uses base-10 (e.g., kilobyte), but the option for binary (base-2) can be given._
 
+## Install
+
+To install as a dependency from GitHub, run:
+
+```
+npm install github:rivea0/unpretty-bytes
+```
+
+_**Or**, to use locally, clone the repository:_
+
+```
+git clone git@github.com:rivea0/unpretty-bytes.git
+```
+
+_`cd` into it:_
+
+```
+cd unpretty-bytes
+```
+
+_Install dependencies:_
+
+```
+npm install
+```
+
+_Compile TypeScript to create `dist` folder:_
+
+```
+npm run build
+```
+
 ## Usage
 
 ```js
